@@ -8,11 +8,37 @@
         <style>
 
             #paragraph {font-style: italic;}
+    
             .paragraph {color:blue;}
         </style>
 
     </head>
     <body>
+
+    .nav li {
+        display: inline-block;4
+    }
+
+    @page {
+        size: landscape;
+    }
+
+    @media print {
+        h1,
+        h2,
+        h3 {
+            Color: #000;
+          }
+
+        .nav {
+            display: none;
+        }
+
+        a::after{
+           Content:" <" attr(href); ">";
+           color: #666;
+        }
+    }
         
 
 
