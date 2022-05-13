@@ -1,0 +1,6 @@
+nav {width: 100%;}
+nav ul {float: center; display: flex;}
+nav ul li{float: left; position: relative; list-style: none; padding; 2px;}
+nav ul li a{display: block;}
+.dropdown{display: none; position: absolute;}
+nav li:hover ul{display: block;}

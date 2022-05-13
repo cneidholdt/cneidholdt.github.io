@@ -1,0 +1,29 @@
+ #paragraph {font-style: italic;}
+    
+            .paragraph {color:blue;}
+            .nav li {
+                display: inline-block;4
+            }
+            #bottom {width: 100%; background-image:url"background.png"};
+
+            @page {
+                size: landscape;
+            }
+        
+            @media print {
+                h1,
+                h2,
+                h3 {
+                    Color: #000;
+                  }
+        
+                .nav {
+                    display: none;
+                }
+        
+                a::after{
+                   Content:" <" attr(href); ">";
+                   color: #666;
+                }
+            }
+    
